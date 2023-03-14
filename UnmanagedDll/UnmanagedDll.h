@@ -59,10 +59,3 @@ extern "C" UNMANAGEDDLL_API CLASS GetDefaultClass();
 extern "C" UNMANAGEDDLL_API const char* GetCharacterName();
 extern "C" UNMANAGEDDLL_API bool CompareCharacterName(const char* name);
 extern "C" UNMANAGEDDLL_API void UpdateStats(Stats * stats, Character updatedCharacter);
-
-
-//extern "C" UNMANAGEDDLL_API char* GetExampleChar();
-//extern "C" UNMANAGEDDLL_API std::string GetExampleString();
-//extern "C" UNMANAGEDDLL_API void* GetPointer();
-//extern "C" UNMANAGEDDLL_API std::vector<int> GetExampleIntVector();
-//extern "C" UNMANAGEDDLL_API std::vector<std::string> GetExampleStringVector();
