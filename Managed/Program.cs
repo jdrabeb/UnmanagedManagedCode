@@ -1,5 +1,4 @@
 ﻿using System.Runtime.InteropServices;
-using CLIWrapper;
 
 namespace Managed
 {
@@ -139,21 +138,6 @@ namespace Managed
             // Cleanup
             Marshal.FreeHGlobal(statsPtr);
 
-            Console.WriteLine("************* Use CLI/C++ Wrapper: ******************\n\n");
-
-            // CLI/C++
-            ManagedMap map = new ManagedMap();
-            Console.WriteLine($"Current zone : {map.GetCurrentZone()}\n\n");
-            Console.WriteLine($"Update zone");
-            map.SetCurrentZone("The Abyss");
-            Console.WriteLine($"New zone : {map.GetCurrentZone()} \n\n");
-            string[] bossList = map.GetBossList();
-            Console.WriteLine($"Boss list: ");
-            foreach (string boss in bossList)
-            {
-                Console.WriteLine($"** {boss}");
-            }
-            Console.WriteLine($"\nBonfire count : {map.GetBonfireCount()}");
         }
     }
 }
